@@ -1,0 +1,29 @@
+<ion-content>
+  <div class="container">
+    <div class="header">
+      <div class="title">
+        <img src="https://pbs.twimg.com/profile_images/1296207707054186499/1vIol6HO_400x400.jpg">
+      </div>
+      <h3>LAVENIR</h3>
+      <p>Office and ICT solutions</p>
+    </div>
+    <div class="body">
+      <ion-list>
+        <div [formGroup]="formGroup">
+          <ion-item>
+            <ion-input formControlName="email" placeholder="Email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="password" formControlName="password" placeholder="Password"></ion-input>
+          </ion-item>
+
+          <ion-button shape="round" class="btn-login btn-box" color="light" (click)="signUp()"
+            [disabled]="formGroup.status == 'INVALID'">Register</ion-button>
+        </div>
+      </ion-list>
+    </div>
+    <div class="footer" (click)="goTo('/')">
+      Have an account?
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "245562045849",
+    "firebase_url": "https://anuncioapp-91ea5.firebaseio.com",
+    "project_id": "anuncioapp-91ea5",
+    "storage_bucket": "anuncioapp-91ea5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245562045849:android:6cb1ac9b366af718138f08",
+        "android_client_info": {
+          "package_name": "io.valdusoft.ads"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245562045849-jul2vdi2jr7or48ajg1baamknq5m5tmj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr7QBmHLc7vCtRRh_RhxvKPcN813bS4k0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245562045849-jul2vdi2jr7or48ajg1baamknq5m5tmj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

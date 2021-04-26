@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <!-- <ion-back-button></ion-back-button> -->
+    </ion-buttons>
+  
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true" slot="fixed" >
+    <div class="card">
+      <div class="header">
+        <div class="avatar">
+          <img src="https://image.flaticon.com/icons/png/512/149/149071.png" alt="">
+        </div>
+      </div>
+
+
+      <div class="card-body">
+        <div class="user-meta ion-text-center">
+          <h3 class="username" *ngIf="user" >{{user.email}}</h3>
+          <h5 class="trainer">Trainer Pokemon</h5>
+        </div>
+
+        <ion-button shape="round" class="btn-back" (click)="close()">Cerrar session</ion-button>
+        <ion-button shape="round" class="btn-back" (click)="goTo('/home')">Volver</ion-button>
+
+      </div>
+    </div>
+</ion-content>

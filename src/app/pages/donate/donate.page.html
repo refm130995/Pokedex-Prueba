@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+    </ion-buttons>
+    <ion-buttons slot="primary">
+    </ion-buttons>
+
+    <ion-title>Pokemon Card</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+
+    <ion-row class="ion-align-items-center">
+      <ion-col>
+        <img [src]="pokemon?.sprites?.other['official-artwork']?.front_default">
+        <p class="title ion-text-capitalize">{{pokemon.name}}</p>
+        <p> <b>Type:</b></p>
+        <p *ngFor="let item of pokemon.types" class="ion-text-capitalize">
+          <b> {{item.type.name}}</b>
+        </p>
+
+        <hr class="line">
+
+        <div class="center-position">
+          <div class="custom-btn">
+            <div class="attack">Power base</div>
+            <div class="power">{{pokemon.base_experience}} </div>
+            <div class="stats">{{pokemon.weight}} </div>
+          </div>
+        </div>
+
+        <h4 class="stats-power"> Stats & Power </h4>
+        <div class="between-position" *ngFor="let item of pokemon.stats">
+          <p class="ion-text-capitalize">{{item.stat.name}}</p>
+          <p>{{item.base_stat}}</p>
+        </div>
+
+
+
+        <h4> Abilities </h4>
+        <div class="between-position" *ngFor="let item of pokemon.abilities">
+          <p class="ion-text-capitalize">{{item.ability.name}}</p>
+          <p>{{item.slot}}</p>
+        </div>
+
+
+        <ion-button shape="round" class="btn-back" (click)="goBack()">Back</ion-button>
+
+      </ion-col>
+    </ion-row>
+
+
+  </ion-grid>
+
+</ion-content>
